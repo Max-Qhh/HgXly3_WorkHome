@@ -1,0 +1,14 @@
+#猫hair,name,corol,age,gender,hail,skill
+cat1:
+  name: 'tom'
+  color: 'blue and white'
+  age: '2'
+  gender: "小公猫"
+  hail: "短毛"
+  skill: "会捉老鼠"
+
+dog1:
+  name: 'Zhh'
+  color: 'black'
+  age: '10'
+  gemder: '母'
