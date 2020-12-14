@@ -1,0 +1,181 @@
+{
+  "uid": "c9777b1e6a2e2ab5",
+  "name": "test_mul[float]",
+  "fullName": "test_AllCalc.TestCalc#test_mul",
+  "historyId": "6f0c5d846b872faf37f0eb894178a1f8",
+  "time": {
+    "start": 1607960823047,
+    "stop": 1607960823047,
+    "duration": 0
+  },
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "beforeStages": [
+    {
+      "name": "get_mul_datas",
+      "time": {
+        "start": 1607960823046,
+        "stop": 1607960823046,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "hasContent": false,
+      "stepsCount": 0,
+      "shouldDisplayMessage": false,
+      "attachmentsCount": 0
+    },
+    {
+      "name": "get_calc",
+      "time": {
+        "start": 1607960823045,
+        "stop": 1607960823045,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "hasContent": false,
+      "stepsCount": 0,
+      "shouldDisplayMessage": false,
+      "attachmentsCount": 0
+    }
+  ],
+  "testStage": {
+    "status": "passed",
+    "steps": [
+      {
+        "name": "计算两个数相乘",
+        "time": {
+          "start": 1607960823047,
+          "stop": 1607960823047,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "hasContent": false,
+        "stepsCount": 0,
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0
+      }
+    ],
+    "attachments": [],
+    "parameters": [],
+    "hasContent": true,
+    "stepsCount": 1,
+    "shouldDisplayMessage": false,
+    "attachmentsCount": 0
+  },
+  "afterStages": [
+    {
+      "name": "get_mul_datas::0",
+      "time": {
+        "start": 1607960823047,
+        "stop": 1607960823047,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "hasContent": false,
+      "stepsCount": 0,
+      "shouldDisplayMessage": false,
+      "attachmentsCount": 0
+    },
+    {
+      "name": "get_calc::0",
+      "time": {
+        "start": 1607960823049,
+        "stop": 1607960823049,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "hasContent": false,
+      "stepsCount": 0,
+      "shouldDisplayMessage": false,
+      "attachmentsCount": 0
+    }
+  ],
+  "labels": [
+    {
+      "name": "story",
+      "value": "测试乘法"
+    },
+    {
+      "name": "feature",
+      "value": "测试计算器"
+    },
+    {
+      "name": "tag",
+      "value": "run(order=3)"
+    },
+    {
+      "name": "tag",
+      "value": "mul"
+    },
+    {
+      "name": "suite",
+      "value": "test_AllCalc"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestCalc"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-KFISM3L"
+    },
+    {
+      "name": "thread",
+      "value": "8556-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_AllCalc"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "get_mul_datas",
+      "value": "[0.1, 0.2, 0.02]"
+    }
+  ],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "normal",
+    "retries": [],
+    "categories": [],
+    "tags": [
+      "run(order=3)",
+      "mul"
+    ]
+  },
+  "source": "c9777b1e6a2e2ab5.json",
+  "parameterValues": [
+    "[0.1, 0.2, 0.02]"
+  ]
+}

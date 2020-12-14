@@ -1,0 +1,222 @@
+{
+  "uid": "a9f1e049fe62b321",
+  "name": "test_mul[空格]",
+  "fullName": "test_AllCalc.TestCalc#test_mul",
+  "historyId": "b0234e29057d2f4d4332b429f1e8c48d",
+  "time": {
+    "start": 1607960826476,
+    "stop": 1607960826477,
+    "duration": 1
+  },
+  "status": "failed",
+  "statusMessage": "AssertionError: assert '     ' == '请输入数字'\n  Strings contain only whitespace, escaping them using repr()\n  - '请输入数字'\n  + '     '",
+  "statusTrace": "self = <testing_AllCalc.test_AllCalc.TestCalc object at 0x00000201782D9BB0>\nget_calc = <testing_AllCalc.calc.Calculator object at 0x00000201782D9760>\nget_mul_datas = [' ', 5, '请输入数字']\n\n    @pytest.mark.mul\n    @pytest.mark.run(order=3)\n    @allure.story(\"测试乘法\")\n    def test_mul(self, get_calc, get_mul_datas):\n        result = None\n        try:\n            with allure.step(\"计算两个数相乘\"):\n                result = get_calc.mul(get_mul_datas[0], get_mul_datas[1])\n            if isinstance(result, float):\n                result = round(result, 2)\n        except Exception as e:\n            print(e)\n    \n>       assert result == get_mul_datas[2]\nE       AssertionError: assert '     ' == '请输入数字'\nE         Strings contain only whitespace, escaping them using repr()\nE         - '请输入数字'\nE         + '     '\n\ntest_AllCalc.py:79: AssertionError",
+  "flaky": false,
+  "newFailed": false,
+  "beforeStages": [
+    {
+      "name": "get_mul_datas",
+      "time": {
+        "start": 1607960826475,
+        "stop": 1607960826475,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "hasContent": false,
+      "stepsCount": 0,
+      "shouldDisplayMessage": false,
+      "attachmentsCount": 0
+    },
+    {
+      "name": "get_calc",
+      "time": {
+        "start": 1607960826474,
+        "stop": 1607960826475,
+        "duration": 1
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "hasContent": false,
+      "stepsCount": 0,
+      "shouldDisplayMessage": false,
+      "attachmentsCount": 0
+    }
+  ],
+  "testStage": {
+    "status": "failed",
+    "statusMessage": "AssertionError: assert '     ' == '请输入数字'\n  Strings contain only whitespace, escaping them using repr()\n  - '请输入数字'\n  + '     '",
+    "statusTrace": "self = <testing_AllCalc.test_AllCalc.TestCalc object at 0x00000201782D9BB0>\nget_calc = <testing_AllCalc.calc.Calculator object at 0x00000201782D9760>\nget_mul_datas = [' ', 5, '请输入数字']\n\n    @pytest.mark.mul\n    @pytest.mark.run(order=3)\n    @allure.story(\"测试乘法\")\n    def test_mul(self, get_calc, get_mul_datas):\n        result = None\n        try:\n            with allure.step(\"计算两个数相乘\"):\n                result = get_calc.mul(get_mul_datas[0], get_mul_datas[1])\n            if isinstance(result, float):\n                result = round(result, 2)\n        except Exception as e:\n            print(e)\n    \n>       assert result == get_mul_datas[2]\nE       AssertionError: assert '     ' == '请输入数字'\nE         Strings contain only whitespace, escaping them using repr()\nE         - '请输入数字'\nE         + '     '\n\ntest_AllCalc.py:79: AssertionError",
+    "steps": [
+      {
+        "name": "计算两个数相乘",
+        "time": {
+          "start": 1607960826476,
+          "stop": 1607960826477,
+          "duration": 1
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "hasContent": false,
+        "stepsCount": 0,
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0
+      }
+    ],
+    "attachments": [],
+    "parameters": [],
+    "hasContent": true,
+    "stepsCount": 1,
+    "shouldDisplayMessage": true,
+    "attachmentsCount": 0
+  },
+  "afterStages": [
+    {
+      "name": "get_mul_datas::0",
+      "time": {
+        "start": 1607960826492,
+        "stop": 1607960826492,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "hasContent": false,
+      "stepsCount": 0,
+      "shouldDisplayMessage": false,
+      "attachmentsCount": 0
+    },
+    {
+      "name": "get_calc::0",
+      "time": {
+        "start": 1607960826496,
+        "stop": 1607960826496,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "hasContent": false,
+      "stepsCount": 0,
+      "shouldDisplayMessage": false,
+      "attachmentsCount": 0
+    }
+  ],
+  "labels": [
+    {
+      "name": "story",
+      "value": "测试乘法"
+    },
+    {
+      "name": "feature",
+      "value": "测试计算器"
+    },
+    {
+      "name": "tag",
+      "value": "run(order=3)"
+    },
+    {
+      "name": "tag",
+      "value": "mul"
+    },
+    {
+      "name": "suite",
+      "value": "test_AllCalc"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestCalc"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-KFISM3L"
+    },
+    {
+      "name": "thread",
+      "value": "6100-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_AllCalc"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "get_mul_datas",
+      "value": "[' ', 5, '请输入数字']"
+    }
+  ],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "normal",
+    "retries": [
+      {
+        "uid": "4529c38e6a15af81",
+        "status": "failed",
+        "statusDetails": "AssertionError: assert '     ' == '请输入数字'\n  Strings contain only whitespace, escaping them using repr()\n  - '请输入数字'\n  + '     '",
+        "time": {
+          "start": 1607960825436,
+          "stop": 1607960825438,
+          "duration": 2
+        }
+      },
+      {
+        "uid": "29aebe1a47459851",
+        "status": "failed",
+        "statusDetails": "AssertionError: assert '     ' == '请输入数字'\n  Strings contain only whitespace, escaping them using repr()\n  - '请输入数字'\n  + '     '",
+        "time": {
+          "start": 1607960824287,
+          "stop": 1607960824288,
+          "duration": 1
+        }
+      },
+      {
+        "uid": "88b1e8f8ee573b43",
+        "status": "failed",
+        "statusDetails": "AssertionError: assert '     ' == '请输入数字'\n  Strings contain only whitespace, escaping them using repr()\n  - '请输入数字'\n  + '     '",
+        "time": {
+          "start": 1607960823001,
+          "stop": 1607960823007,
+          "duration": 6
+        }
+      }
+    ],
+    "categories": [
+      {
+        "name": "Product defects",
+        "matchedStatuses": [],
+        "flaky": false
+      }
+    ],
+    "tags": [
+      "run(order=3)",
+      "mul"
+    ]
+  },
+  "source": "a9f1e049fe62b321.json",
+  "parameterValues": [
+    "[' ', 5, '请输入数字']"
+  ]
+}

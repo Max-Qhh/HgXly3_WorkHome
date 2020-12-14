@@ -1,0 +1,74 @@
+{
+  "name": "test_add[failed]",
+  "status": "failed",
+  "statusDetails": {
+    "message": "AssertionError: assert -0.1 == 0\n  +-0.1\n  -0",
+    "trace": "self = <testing_AllCalc.test_AllCalc.TestCalc object at 0x00000215E339B880>\nget_calc = <testing_AllCalc.calc.Calculator object at 0x00000215E339B340>\nget_add_datas = [0.1, -0.2, 0]\n\n    @pytest.mark.add\n    @pytest.mark.run(order=1)\n    @allure.story(\"测试加法\")\n    def test_add(self, get_calc, get_add_datas):\n        # 因为作用域的问题，定义None，获取result，和断言对比\n        result = None\n        # 异常处理\n        try:\n            with allure.step(\"计算两个数的相加和\"):\n                result = get_calc.add(get_add_datas[0], get_add_datas[1])\n            if isinstance(result, float):\n                result = round(result, 2)\n        except Exception as e:\n            print(e)\n    \n        # 得到结果之后，需要写断言\n>       assert result == get_add_datas[2]\nE       assert -0.1 == 0\nE         +-0.1\nE         -0\n\ntest_AllCalc.py:26: AssertionError"
+  },
+  "steps": [
+    {
+      "name": "计算两个数的相加和",
+      "status": "passed",
+      "start": 1607960824289,
+      "stop": 1607960824290
+    }
+  ],
+  "parameters": [
+    {
+      "name": "get_add_datas",
+      "value": "[0.1, -0.2, 0]"
+    }
+  ],
+  "start": 1607960824289,
+  "stop": 1607960824290,
+  "uuid": "687de2e5-b59a-4c30-abae-651484908d40",
+  "historyId": "ea3b6d7a16f155bd846194a864de64c4",
+  "testCaseId": "0930d03965f4f9c1518f6b6843e7f9a5",
+  "fullName": "test_AllCalc.TestCalc#test_add",
+  "labels": [
+    {
+      "name": "story",
+      "value": "测试加法"
+    },
+    {
+      "name": "feature",
+      "value": "测试计算器"
+    },
+    {
+      "name": "tag",
+      "value": "add"
+    },
+    {
+      "name": "tag",
+      "value": "run(order=1)"
+    },
+    {
+      "name": "suite",
+      "value": "test_AllCalc"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestCalc"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-KFISM3L"
+    },
+    {
+      "name": "thread",
+      "value": "6412-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_AllCalc"
+    }
+  ]
+}

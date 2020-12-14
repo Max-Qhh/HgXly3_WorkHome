@@ -1,0 +1,24 @@
+{
+  "uuid": "51927dc6-2cfa-4b08-995b-0cea83573dd9",
+  "children": [
+    "bb60f2c1-da01-4f74-80cd-fa8060dd460d"
+  ],
+  "befores": [
+    {
+      "name": "get_mul_datas",
+      "status": "passed",
+      "start": 1607960823012,
+      "stop": 1607960823012
+    }
+  ],
+  "afters": [
+    {
+      "name": "get_mul_datas::0",
+      "status": "passed",
+      "start": 1607960823014,
+      "stop": 1607960823014
+    }
+  ],
+  "start": 1607960823012,
+  "stop": 1607960823014
+}

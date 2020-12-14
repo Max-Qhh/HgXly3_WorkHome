@@ -1,0 +1,70 @@
+{
+  "name": "test_sub[negative]",
+  "status": "passed",
+  "steps": [
+    {
+      "name": "计算两个数相减",
+      "status": "passed",
+      "start": 1607960823000,
+      "stop": 1607960823000
+    }
+  ],
+  "parameters": [
+    {
+      "name": "get_sub_datas",
+      "value": "[-3, -2, -1]"
+    }
+  ],
+  "start": 1607960822999,
+  "stop": 1607960823000,
+  "uuid": "63ea38aa-75a9-4dc4-8e34-6d72338cd5c5",
+  "historyId": "de0c95cfe7c7fd9d9272590f4d3e51be",
+  "testCaseId": "28d29f02ad3ceedbaabee607dd4d8e05",
+  "fullName": "test_AllCalc.TestCalc#test_sub",
+  "labels": [
+    {
+      "name": "feature",
+      "value": "测试计算器"
+    },
+    {
+      "name": "story",
+      "value": "测试减法"
+    },
+    {
+      "name": "tag",
+      "value": "sub"
+    },
+    {
+      "name": "tag",
+      "value": "run(order=2)"
+    },
+    {
+      "name": "suite",
+      "value": "test_AllCalc"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestCalc"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-KFISM3L"
+    },
+    {
+      "name": "thread",
+      "value": "4356-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_AllCalc"
+    }
+  ]
+}

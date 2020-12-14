@@ -1,0 +1,17 @@
+{
+  "total": 1,
+  "items": [
+    {
+      "uid": "722ec87d70fc5ba04bfecc7360158ed9",
+      "name": "test_AllCalc",
+      "statistic": {
+        "failed": 8,
+        "broken": 0,
+        "skipped": 0,
+        "passed": 16,
+        "unknown": 0,
+        "total": 24
+      }
+    }
+  ]
+}

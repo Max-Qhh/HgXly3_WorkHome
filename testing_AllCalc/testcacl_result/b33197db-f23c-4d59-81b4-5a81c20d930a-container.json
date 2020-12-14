@@ -1,0 +1,24 @@
+{
+  "uuid": "3333ca62-7796-4902-a36b-acc8c534215d",
+  "children": [
+    "fcfafb35-f78a-4d1b-a545-d7fde1cbf62d"
+  ],
+  "befores": [
+    {
+      "name": "get_mul_datas",
+      "status": "passed",
+      "start": 1607960823019,
+      "stop": 1607960823019
+    }
+  ],
+  "afters": [
+    {
+      "name": "get_mul_datas::0",
+      "status": "passed",
+      "start": 1607960823020,
+      "stop": 1607960823020
+    }
+  ],
+  "start": 1607960823019,
+  "stop": 1607960823020
+}

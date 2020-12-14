@@ -1,0 +1,181 @@
+{
+  "uid": "49a48e8c28721d70",
+  "name": "test_sub[bigint]",
+  "fullName": "test_AllCalc.TestCalc#test_sub",
+  "historyId": "ad40fac189bd54c0d4c68ddf3b78f008",
+  "time": {
+    "start": 1607960822995,
+    "stop": 1607960822996,
+    "duration": 1
+  },
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "beforeStages": [
+    {
+      "name": "get_sub_datas",
+      "time": {
+        "start": 1607960822994,
+        "stop": 1607960822994,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "hasContent": false,
+      "stepsCount": 0,
+      "shouldDisplayMessage": false,
+      "attachmentsCount": 0
+    },
+    {
+      "name": "get_calc",
+      "time": {
+        "start": 1607960822993,
+        "stop": 1607960822994,
+        "duration": 1
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "hasContent": false,
+      "stepsCount": 0,
+      "shouldDisplayMessage": false,
+      "attachmentsCount": 0
+    }
+  ],
+  "testStage": {
+    "status": "passed",
+    "steps": [
+      {
+        "name": "计算两个数相减",
+        "time": {
+          "start": 1607960822996,
+          "stop": 1607960822996,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "hasContent": false,
+        "stepsCount": 0,
+        "shouldDisplayMessage": false,
+        "attachmentsCount": 0
+      }
+    ],
+    "attachments": [],
+    "parameters": [],
+    "hasContent": true,
+    "stepsCount": 1,
+    "shouldDisplayMessage": false,
+    "attachmentsCount": 0
+  },
+  "afterStages": [
+    {
+      "name": "get_sub_datas::0",
+      "time": {
+        "start": 1607960822997,
+        "stop": 1607960822997,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "hasContent": false,
+      "stepsCount": 0,
+      "shouldDisplayMessage": false,
+      "attachmentsCount": 0
+    },
+    {
+      "name": "get_calc::0",
+      "time": {
+        "start": 1607960823002,
+        "stop": 1607960823002,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "hasContent": false,
+      "stepsCount": 0,
+      "shouldDisplayMessage": false,
+      "attachmentsCount": 0
+    }
+  ],
+  "labels": [
+    {
+      "name": "story",
+      "value": "测试减法"
+    },
+    {
+      "name": "feature",
+      "value": "测试计算器"
+    },
+    {
+      "name": "tag",
+      "value": "sub"
+    },
+    {
+      "name": "tag",
+      "value": "run(order=2)"
+    },
+    {
+      "name": "suite",
+      "value": "test_AllCalc"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestCalc"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-KFISM3L"
+    },
+    {
+      "name": "thread",
+      "value": "7044-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_AllCalc"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "get_sub_datas",
+      "value": "[200, 100, 100]"
+    }
+  ],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "normal",
+    "retries": [],
+    "categories": [],
+    "tags": [
+      "sub",
+      "run(order=2)"
+    ]
+  },
+  "source": "49a48e8c28721d70.json",
+  "parameterValues": [
+    "[200, 100, 100]"
+  ]
+}

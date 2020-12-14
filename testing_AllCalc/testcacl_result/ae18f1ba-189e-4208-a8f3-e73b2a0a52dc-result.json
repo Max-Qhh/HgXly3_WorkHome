@@ -1,0 +1,74 @@
+{
+  "name": "test_mul[failed]",
+  "status": "failed",
+  "statusDetails": {
+    "message": "AssertionError: assert -0.09 == 0.9\n  +-0.09\n  -0.9",
+    "trace": "self = <testing_AllCalc.test_AllCalc.TestCalc object at 0x000001A4C0A2CEB0>\nget_calc = <testing_AllCalc.calc.Calculator object at 0x000001A4C0A2CF70>\nget_mul_datas = [0.3, -0.3, 0.9]\n\n    @pytest.mark.mul\n    @pytest.mark.run(order=3)\n    @allure.story(\"测试乘法\")\n    def test_mul(self, get_calc, get_mul_datas):\n        result = None\n        try:\n            with allure.step(\"计算两个数相乘\"):\n                result = get_calc.mul(get_mul_datas[0], get_mul_datas[1])\n            if isinstance(result, float):\n                result = round(result, 2)\n        except Exception as e:\n            print(e)\n    \n>       assert result == get_mul_datas[2]\nE       assert -0.09 == 0.9\nE         +-0.09\nE         -0.9\n\ntest_AllCalc.py:79: AssertionError"
+  },
+  "steps": [
+    {
+      "name": "计算两个数相乘",
+      "status": "passed",
+      "start": 1607960823018,
+      "stop": 1607960823018
+    }
+  ],
+  "parameters": [
+    {
+      "name": "get_mul_datas",
+      "value": "[0.3, -0.3, 0.9]"
+    }
+  ],
+  "start": 1607960823018,
+  "stop": 1607960823019,
+  "uuid": "fc232e36-3a88-4669-aab9-073d428fafc9",
+  "historyId": "a91ce74751abf85d5bb7eb96312ed118",
+  "testCaseId": "d26658bf9d14a8b9998eaf33b145304a",
+  "fullName": "test_AllCalc.TestCalc#test_mul",
+  "labels": [
+    {
+      "name": "story",
+      "value": "测试乘法"
+    },
+    {
+      "name": "feature",
+      "value": "测试计算器"
+    },
+    {
+      "name": "tag",
+      "value": "mul"
+    },
+    {
+      "name": "tag",
+      "value": "run(order=3)"
+    },
+    {
+      "name": "suite",
+      "value": "test_AllCalc"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestCalc"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-KFISM3L"
+    },
+    {
+      "name": "thread",
+      "value": "14056-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_AllCalc"
+    }
+  ]
+}

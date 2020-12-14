@@ -1,0 +1,24 @@
+{
+  "uuid": "714f66a4-e985-4c93-b7ce-99018df98b74",
+  "children": [
+    "6248ca6f-6c82-42a4-8537-1667c8abdce8"
+  ],
+  "befores": [
+    {
+      "name": "get_calc",
+      "status": "passed",
+      "start": 1607960823004,
+      "stop": 1607960823004
+    }
+  ],
+  "afters": [
+    {
+      "name": "get_calc::0",
+      "status": "passed",
+      "start": 1607960823277,
+      "stop": 1607960823277
+    }
+  ],
+  "start": 1607960823004,
+  "stop": 1607960823277
+}

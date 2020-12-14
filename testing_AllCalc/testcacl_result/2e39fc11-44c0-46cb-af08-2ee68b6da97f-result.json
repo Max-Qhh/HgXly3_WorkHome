@@ -1,0 +1,74 @@
+{
+  "name": "test_sub[failed]",
+  "status": "failed",
+  "statusDetails": {
+    "message": "AssertionError: assert 0.5 == 0.3\n  +0.5\n  -0.3",
+    "trace": "self = <testing_AllCalc.test_AllCalc.TestCalc object at 0x00000217AE2F40D0>\nget_calc = <testing_AllCalc.calc.Calculator object at 0x00000217AE2F4730>\nget_sub_datas = [0.4, -0.1, 0.3]\n\n    @pytest.mark.sub\n    @allure.story(\"测试减法\")\n    @pytest.mark.run(order=2)\n    def test_sub(self, get_calc, get_sub_datas):\n        result = None\n        try:\n            with allure.step(\"计算两个数相减\"):\n                result = get_calc.sub(get_sub_datas[0], get_sub_datas[1])\n            if isinstance(result, float):\n                result = round(result, 2)\n        except Exception as e:\n            print(e)\n    \n>       assert result == get_sub_datas[2]\nE       assert 0.5 == 0.3\nE         +0.5\nE         -0.3\n\ntest_AllCalc.py:63: AssertionError"
+  },
+  "steps": [
+    {
+      "name": "计算两个数相减",
+      "status": "passed",
+      "start": 1607960825427,
+      "stop": 1607960825427
+    }
+  ],
+  "parameters": [
+    {
+      "name": "get_sub_datas",
+      "value": "[0.4, -0.1, 0.3]"
+    }
+  ],
+  "start": 1607960825426,
+  "stop": 1607960825428,
+  "uuid": "f5bf3b78-1680-4b89-b806-c2335c280d1b",
+  "historyId": "4156f60bb22f376e7c4ea670a8dd6d2d",
+  "testCaseId": "28d29f02ad3ceedbaabee607dd4d8e05",
+  "fullName": "test_AllCalc.TestCalc#test_sub",
+  "labels": [
+    {
+      "name": "story",
+      "value": "测试减法"
+    },
+    {
+      "name": "feature",
+      "value": "测试计算器"
+    },
+    {
+      "name": "tag",
+      "value": "run(order=2)"
+    },
+    {
+      "name": "tag",
+      "value": "sub"
+    },
+    {
+      "name": "suite",
+      "value": "test_AllCalc"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestCalc"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-KFISM3L"
+    },
+    {
+      "name": "thread",
+      "value": "5932-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_AllCalc"
+    }
+  ]
+}

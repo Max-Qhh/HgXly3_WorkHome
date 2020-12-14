@@ -1,0 +1,78 @@
+{
+  "name": "test_div[空格]",
+  "status": "failed",
+  "statusDetails": {
+    "message": "AssertionError: assert None == '请输入数字'\n  +None\n  -'请输入数字'",
+    "trace": "self = <testing_AllCalc.test_AllCalc.TestCalc object at 0x000002353417CEB0>\nget_calc = <testing_AllCalc.calc.Calculator object at 0x000002353417CF70>\nget_div_datas = [' ', 5, '请输入数字']\n\n    @pytest.mark.div\n    @pytest.mark.run(order=4)\n    @allure.story(\"测试除法\")\n    def test_div(self, get_calc, get_div_datas):\n        result = None\n        try:\n            with allure.step(\"测试两个数相除\"):\n                result = get_calc.div(get_div_datas[0],get_div_datas[1])\n            if isinstance(result, float):\n                result = round(result, 2)\n        except Exception as e:\n            print(e)\n    \n>       assert result == get_div_datas[2]\nE       AssertionError: assert None == '请输入数字'\nE         +None\nE         -'请输入数字'\n\ntest_AllCalc.py:95: AssertionError"
+  },
+  "steps": [
+    {
+      "name": "测试两个数相除",
+      "status": "broken",
+      "statusDetails": {
+        "message": "TypeError: unsupported operand type(s) for /: 'str' and 'int'\n",
+        "trace": "  File \"D:\\PycharmProjects\\HogWartsXly3\\testing_AllCalc\\test_AllCalc.py\", line 89, in test_div\n    result = get_calc.div(get_div_datas[0],get_div_datas[1])\n  File \"D:\\PycharmProjects\\HogWartsXly3\\testing_AllCalc\\calc.py\", line 19, in div\n    return a / b\n"
+      },
+      "start": 1607960823002,
+      "stop": 1607960823002
+    }
+  ],
+  "parameters": [
+    {
+      "name": "get_div_datas",
+      "value": "[' ', 5, '请输入数字']"
+    }
+  ],
+  "start": 1607960823001,
+  "stop": 1607960823009,
+  "uuid": "2258d4fa-f583-4b9d-b08d-e82333f748db",
+  "historyId": "fb90b492b8e1466c826826258489826a",
+  "testCaseId": "f3b443b274a42a2b8ea22c380a4cdd93",
+  "fullName": "test_AllCalc.TestCalc#test_div",
+  "labels": [
+    {
+      "name": "feature",
+      "value": "测试计算器"
+    },
+    {
+      "name": "story",
+      "value": "测试除法"
+    },
+    {
+      "name": "tag",
+      "value": "div"
+    },
+    {
+      "name": "tag",
+      "value": "run(order=4)"
+    },
+    {
+      "name": "suite",
+      "value": "test_AllCalc"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestCalc"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-KFISM3L"
+    },
+    {
+      "name": "thread",
+      "value": "11272-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_AllCalc"
+    }
+  ]
+}

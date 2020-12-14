@@ -1,0 +1,74 @@
+{
+  "name": "test_mul[空格]",
+  "status": "failed",
+  "statusDetails": {
+    "message": "AssertionError: assert '     ' == '请输入数字'\n  Strings contain only whitespace, escaping them using repr()\n  - '请输入数字'\n  + '     '",
+    "trace": "self = <testing_AllCalc.test_AllCalc.TestCalc object at 0x00000201782A51C0>\nget_calc = <testing_AllCalc.calc.Calculator object at 0x00000201782A50D0>\nget_mul_datas = [' ', 5, '请输入数字']\n\n    @pytest.mark.mul\n    @pytest.mark.run(order=3)\n    @allure.story(\"测试乘法\")\n    def test_mul(self, get_calc, get_mul_datas):\n        result = None\n        try:\n            with allure.step(\"计算两个数相乘\"):\n                result = get_calc.mul(get_mul_datas[0], get_mul_datas[1])\n            if isinstance(result, float):\n                result = round(result, 2)\n        except Exception as e:\n            print(e)\n    \n>       assert result == get_mul_datas[2]\nE       AssertionError: assert '     ' == '请输入数字'\nE         Strings contain only whitespace, escaping them using repr()\nE         - '请输入数字'\nE         + '     '\n\ntest_AllCalc.py:79: AssertionError"
+  },
+  "steps": [
+    {
+      "name": "计算两个数相乘",
+      "status": "passed",
+      "start": 1607960824287,
+      "stop": 1607960824287
+    }
+  ],
+  "parameters": [
+    {
+      "name": "get_mul_datas",
+      "value": "[' ', 5, '请输入数字']"
+    }
+  ],
+  "start": 1607960824287,
+  "stop": 1607960824288,
+  "uuid": "a840ef85-bc77-441b-9049-6a0cd6f6c1c2",
+  "historyId": "b0234e29057d2f4d4332b429f1e8c48d",
+  "testCaseId": "d26658bf9d14a8b9998eaf33b145304a",
+  "fullName": "test_AllCalc.TestCalc#test_mul",
+  "labels": [
+    {
+      "name": "story",
+      "value": "测试乘法"
+    },
+    {
+      "name": "feature",
+      "value": "测试计算器"
+    },
+    {
+      "name": "tag",
+      "value": "run(order=3)"
+    },
+    {
+      "name": "tag",
+      "value": "mul"
+    },
+    {
+      "name": "suite",
+      "value": "test_AllCalc"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestCalc"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-KFISM3L"
+    },
+    {
+      "name": "thread",
+      "value": "6100-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_AllCalc"
+    }
+  ]
+}

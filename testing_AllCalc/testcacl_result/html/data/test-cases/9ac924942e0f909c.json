@@ -1,0 +1,185 @@
+{
+  "uid": "9ac924942e0f909c",
+  "name": "test_div[failed]",
+  "fullName": "test_AllCalc.TestCalc#test_div",
+  "historyId": "20fa8b8a87f9febd8760fe72f360731e",
+  "time": {
+    "start": 1607960823013,
+    "stop": 1607960823014,
+    "duration": 1
+  },
+  "status": "failed",
+  "statusMessage": "AssertionError: assert None == 0\n  +None\n  -0",
+  "statusTrace": "self = <testing_AllCalc.test_AllCalc.TestCalc object at 0x000002315103CEE0>\nget_calc = <testing_AllCalc.calc.Calculator object at 0x000002315103CFA0>\nget_div_datas = [0.8, 0, 0]\n\n    @pytest.mark.div\n    @pytest.mark.run(order=4)\n    @allure.story(\"测试除法\")\n    def test_div(self, get_calc, get_div_datas):\n        result = None\n        try:\n            with allure.step(\"测试两个数相除\"):\n                result = get_calc.div(get_div_datas[0],get_div_datas[1])\n            if isinstance(result, float):\n                result = round(result, 2)\n        except Exception as e:\n            print(e)\n    \n>       assert result == get_div_datas[2]\nE       assert None == 0\nE         +None\nE         -0\n\ntest_AllCalc.py:95: AssertionError",
+  "flaky": false,
+  "newFailed": false,
+  "beforeStages": [
+    {
+      "name": "get_div_datas",
+      "time": {
+        "start": 1607960823012,
+        "stop": 1607960823012,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "hasContent": false,
+      "stepsCount": 0,
+      "shouldDisplayMessage": false,
+      "attachmentsCount": 0
+    },
+    {
+      "name": "get_calc",
+      "time": {
+        "start": 1607960823012,
+        "stop": 1607960823012,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "hasContent": false,
+      "stepsCount": 0,
+      "shouldDisplayMessage": false,
+      "attachmentsCount": 0
+    }
+  ],
+  "testStage": {
+    "status": "failed",
+    "statusMessage": "AssertionError: assert None == 0\n  +None\n  -0",
+    "statusTrace": "self = <testing_AllCalc.test_AllCalc.TestCalc object at 0x000002315103CEE0>\nget_calc = <testing_AllCalc.calc.Calculator object at 0x000002315103CFA0>\nget_div_datas = [0.8, 0, 0]\n\n    @pytest.mark.div\n    @pytest.mark.run(order=4)\n    @allure.story(\"测试除法\")\n    def test_div(self, get_calc, get_div_datas):\n        result = None\n        try:\n            with allure.step(\"测试两个数相除\"):\n                result = get_calc.div(get_div_datas[0],get_div_datas[1])\n            if isinstance(result, float):\n                result = round(result, 2)\n        except Exception as e:\n            print(e)\n    \n>       assert result == get_div_datas[2]\nE       assert None == 0\nE         +None\nE         -0\n\ntest_AllCalc.py:95: AssertionError",
+    "steps": [
+      {
+        "name": "测试两个数相除",
+        "time": {
+          "start": 1607960823013,
+          "stop": 1607960823013,
+          "duration": 0
+        },
+        "status": "broken",
+        "statusMessage": "ZeroDivisionError: float division by zero\n",
+        "statusTrace": "  File \"D:\\PycharmProjects\\HogWartsXly3\\testing_AllCalc\\test_AllCalc.py\", line 89, in test_div\n    result = get_calc.div(get_div_datas[0],get_div_datas[1])\n  File \"D:\\PycharmProjects\\HogWartsXly3\\testing_AllCalc\\calc.py\", line 19, in div\n    return a / b\n",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "hasContent": true,
+        "stepsCount": 0,
+        "shouldDisplayMessage": true,
+        "attachmentsCount": 0
+      }
+    ],
+    "attachments": [],
+    "parameters": [],
+    "hasContent": true,
+    "stepsCount": 1,
+    "shouldDisplayMessage": true,
+    "attachmentsCount": 0
+  },
+  "afterStages": [
+    {
+      "name": "get_div_datas::0",
+      "time": {
+        "start": 1607960823262,
+        "stop": 1607960823262,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "hasContent": false,
+      "stepsCount": 0,
+      "shouldDisplayMessage": false,
+      "attachmentsCount": 0
+    },
+    {
+      "name": "get_calc::0",
+      "time": {
+        "start": 1607960823264,
+        "stop": 1607960823264,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "hasContent": false,
+      "stepsCount": 0,
+      "shouldDisplayMessage": false,
+      "attachmentsCount": 0
+    }
+  ],
+  "labels": [
+    {
+      "name": "story",
+      "value": "测试除法"
+    },
+    {
+      "name": "feature",
+      "value": "测试计算器"
+    },
+    {
+      "name": "tag",
+      "value": "div"
+    },
+    {
+      "name": "tag",
+      "value": "run(order=4)"
+    },
+    {
+      "name": "suite",
+      "value": "test_AllCalc"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestCalc"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-KFISM3L"
+    },
+    {
+      "name": "thread",
+      "value": "5072-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_AllCalc"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "get_div_datas",
+      "value": "[0.8, 0, 0]"
+    }
+  ],
+  "links": [],
+  "hidden": true,
+  "retry": true,
+  "extra": {
+    "categories": [],
+    "tags": [
+      "div",
+      "run(order=4)"
+    ]
+  },
+  "source": "9ac924942e0f909c.json",
+  "parameterValues": [
+    "[0.8, 0, 0]"
+  ]
+}

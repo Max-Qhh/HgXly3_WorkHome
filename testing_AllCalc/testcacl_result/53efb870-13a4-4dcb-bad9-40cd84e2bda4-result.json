@@ -1,0 +1,70 @@
+{
+  "name": "test_div[int]",
+  "status": "passed",
+  "steps": [
+    {
+      "name": "测试两个数相除",
+      "status": "passed",
+      "start": 1607960823022,
+      "stop": 1607960823022
+    }
+  ],
+  "parameters": [
+    {
+      "name": "get_div_datas",
+      "value": "[5, 1, 5]"
+    }
+  ],
+  "start": 1607960823022,
+  "stop": 1607960823022,
+  "uuid": "5bc638a0-4ede-4503-91b9-43ccb216c561",
+  "historyId": "0e5b51bed47ba660b5221ffa91970ada",
+  "testCaseId": "f3b443b274a42a2b8ea22c380a4cdd93",
+  "fullName": "test_AllCalc.TestCalc#test_div",
+  "labels": [
+    {
+      "name": "feature",
+      "value": "测试计算器"
+    },
+    {
+      "name": "story",
+      "value": "测试除法"
+    },
+    {
+      "name": "tag",
+      "value": "div"
+    },
+    {
+      "name": "tag",
+      "value": "run(order=4)"
+    },
+    {
+      "name": "suite",
+      "value": "test_AllCalc"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestCalc"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-KFISM3L"
+    },
+    {
+      "name": "thread",
+      "value": "4676-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_AllCalc"
+    }
+  ]
+}

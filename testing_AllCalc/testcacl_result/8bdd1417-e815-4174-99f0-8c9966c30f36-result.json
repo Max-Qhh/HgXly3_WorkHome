@@ -1,0 +1,70 @@
+{
+  "name": "test_mul[bigint]",
+  "status": "passed",
+  "steps": [
+    {
+      "name": "计算两个数相乘",
+      "status": "passed",
+      "start": 1607960823013,
+      "stop": 1607960823013
+    }
+  ],
+  "parameters": [
+    {
+      "name": "get_mul_datas",
+      "value": "[100, 100, 10000]"
+    }
+  ],
+  "start": 1607960823013,
+  "stop": 1607960823013,
+  "uuid": "bb60f2c1-da01-4f74-80cd-fa8060dd460d",
+  "historyId": "c73fd4208e39909145efd49a9ba9b4d5",
+  "testCaseId": "d26658bf9d14a8b9998eaf33b145304a",
+  "fullName": "test_AllCalc.TestCalc#test_mul",
+  "labels": [
+    {
+      "name": "feature",
+      "value": "测试计算器"
+    },
+    {
+      "name": "story",
+      "value": "测试乘法"
+    },
+    {
+      "name": "tag",
+      "value": "mul"
+    },
+    {
+      "name": "tag",
+      "value": "run(order=3)"
+    },
+    {
+      "name": "suite",
+      "value": "test_AllCalc"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestCalc"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-KFISM3L"
+    },
+    {
+      "name": "thread",
+      "value": "208-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_AllCalc"
+    }
+  ]
+}
