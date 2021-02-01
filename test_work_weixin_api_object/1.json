@@ -1,0 +1,25 @@
+{
+  "errcode": 0,
+  "errmsg": "ok",
+  "department": [
+    {
+      "id": 1,
+      "name": "晴空万里美好相随",
+      "parentid": 0,
+      "order": 100000000
+    },
+    {
+      "id": 2,
+      "name": "领导",
+      "parentid": 1,
+      "order": 100000000
+    },
+    {
+      "id": 3,
+      "name": "广州研发中心2",
+      "parentid": 2,
+      "order": 1,
+      "name_en": "GZYFLD"
+    }
+  ]
+}
