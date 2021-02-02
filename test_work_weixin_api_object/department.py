@@ -43,7 +43,7 @@ class Department(WeWork):
         r = self.send(req)
         return r.json()
 
-    # 更新部门
+    # 删除部门
     def delete_department(self, id):
         id = id
         # 使用字典保存URL以及method的信息，即接口的请求信息
