@@ -1,0 +1,34 @@
+tagmanage:
+  # 创建标签
+  create_tag:
+    - [ "行政", "7" ]
+    - [ "销售", "6" ]
+    - [ "研发", "5" ]
+    - [ "323232323232323232323232323232323", "12" ]
+  # 创建标签ids（不用，在具体业务api中定制）
+  create_tag_id:
+    - "tagname"
+    - "tagid"
+  # 更新标签名字
+  update_tag:
+    - [ "7", "【行政】" ]
+    - [ "6", "【销售】" ]
+    - [ "5", "【研发】" ]
+  # 删除标签
+  delete_tag:
+    - [ "7" ]
+  # 获取标签成员（通过tag_id）
+  get_tag_user:
+    - [ "8" ]
+  # 通过tag_id创建标签成员
+  create_tag_user:
+    - [ "7", [ 'app-user1', 'app-user2' ], [ ] ]
+    - [ "8", [ ], [ '2' ] ]
+  # 通过tag_id删除标签成员
+  delete_tag_user:
+#    - [ "7", [ 'app-user1', 'app-user2' ], [ ] ]
+    - [ "7", [ 'app-user2' ], [ ] ]
+    - [ "8", [ ], [ '2' ] ]
+  # 获取标签列表
+  get_tag_list:
+    - [ ]
